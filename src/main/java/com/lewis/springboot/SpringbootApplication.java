@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class SpringbootApplication {
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     String index(){
+        System.out.println("hello !");
         return "Hello ! Spring Boot !";
     }
 
@@ -21,3 +22,8 @@ public class SpringbootApplication {
         SpringApplication.run(SpringbootApplication.class,args);
     }
 }
+
+
+
+
+
